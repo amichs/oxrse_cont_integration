@@ -39,7 +39,19 @@ def summarise(values):
 
 
 def count_missing(values):
-    """Count the number of NaN values in an array of values."""
+    """
+        Count the number of NaN values in an array of values.
+    
+        Parameters
+        ----------
+        values : array
+            Values to check.
+    
+        Returns
+        -------
+        int
+            The number of NaNs.
+    """
     values = np.asarray(values, dtype=float)
     return int(np.isnan(values).sum())
 
