@@ -39,6 +39,9 @@ def summarise(values):
 
 
 def count_missing(values):
+    """
+    Count the number of NaN values in an array of values.
+    """
     values = np.asarray(values, dtype=float)
     return int(np.isnan(values).sum())
 
